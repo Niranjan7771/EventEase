@@ -1,0 +1,69 @@
+@page "/register/{EventName}"
+
+@using System.ComponentModel.DataAnnotations
+@inject UserSessionService Session
+@inject NavigationManager Navigation
+
+<PageTitle>Register</PageTitle>
+
+@if (IsValidEventName(EventName))
+{
+    @if (registered)
+    {
+        <div class="alert alert-success">
+            <p>Thank you, @Session.UserName! You are registered for @EventName.</p>
+            <a href="/">Return to event list</a>
+        </div>
+    }
+    else
+    {
+        <EditForm Model="registration" OnValidSubmit="HandleValidSubmit">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="mb-3">
+                <label>Name:</label>
+                <InputText class="form-control" @bind-Value="registration.Name" />
+                <ValidationMessage For="@(() => registration.Name)" />
+            </div>
+            <div class="mb-3">
+                <label>Email:</label>
+                <InputText class="form-control" @bind-Value="registration.Email" />
+                <ValidationMessage For="@(() => registration.Email)" />
+            </div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </EditForm>
+    }
+}
+else
+{
+    <div class="alert alert-warning">
+        <p>Event not found.</p>
+        <a href="/">Return to event list</a>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string EventName { get; set; }
+
+    private bool registered = false;
+    private RegistrationModel registration = new();
+
+    private bool IsValidEventName(string name) => !string.IsNullOrWhiteSpace(name);
+
+    private void HandleValidSubmit()
+    {
+        Session.RegisterForEvent(EventName, registration.Name, registration.Email);
+        registered = true;
+    }
+
+    public class RegistrationModel
+    {
+        [Required(ErrorMessage = "Name is required.")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Email is required.")]
+        [EmailAddress(ErrorMessage = "Invalid email address.")]
+        public string Email { get; set; }
+    }
+} 

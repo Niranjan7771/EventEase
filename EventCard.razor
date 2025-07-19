@@ -1,0 +1,32 @@
+@* EventCard.razor *@
+
+@using EventEase.Models
+
+@if (!IsValidEvent(Event))
+{
+    <div class="event-card invalid">
+        <h3>Invalid Event Data</h3>
+        <p>This event could not be displayed due to missing or invalid information.</p>
+    </div>
+}
+else
+{
+    <div class="event-card">
+        <h3>@Event.Name</h3>
+        <p><strong>Date:</strong> @Event.Date.ToString("MMMM dd, yyyy")</p>
+        <p><strong>Location:</strong> @Event.Location</p>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public EventInfo? Event { get; set; }
+
+    private bool IsValidEvent(EventInfo? ev)
+    {
+        return ev != null &&
+               !string.IsNullOrWhiteSpace(ev.Name) &&
+               ev.Date > DateTime.MinValue &&
+               !string.IsNullOrWhiteSpace(ev.Location);
+    }
+} 

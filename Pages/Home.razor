@@ -1,0 +1,31 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Upcoming Events</h1>
+
+<Virtualize Items="events" Context="ev">
+    <EventCard Event="@ev" />
+</Virtualize>
+
+@code {
+    using EventEase.Models;
+    List<EventInfo> events = new List<EventInfo>();
+    protected override void OnInitialized()
+    {
+        // Simulate a large data set for performance testing
+        for (int i = 0; i < 1000; i++)
+        {
+            events.Add(new EventInfo
+            {
+                Name = $"Event {i + 1}",
+                Date = DateTime.Now.AddDays(i),
+                Location = $"Location {i % 10 + 1}"
+            });
+        }
+        // Add some invalid/edge case events for testing
+        events.Add(new EventInfo { Name = null, Date = DateTime.MinValue, Location = null });
+        events.Add(new EventInfo { Name = "", Date = DateTime.MinValue, Location = "" });
+        events.Add(new EventInfo { Name = "Valid Name", Date = DateTime.MinValue, Location = "" });
+    }
+}

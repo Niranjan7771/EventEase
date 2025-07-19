@@ -1,0 +1,59 @@
+@page "/event/{EventName}"
+
+@using EventEase.Models
+@inject NavigationManager Navigation
+@inject UserSessionService Session
+
+<PageTitle>Event Details</PageTitle>
+
+@if (eventInfo != null)
+{
+    <div class="event-details">
+        <h2>@eventInfo.Name</h2>
+        <p><strong>Date:</strong> @eventInfo.Date.ToString("MMMM dd, yyyy")</p>
+        <p><strong>Location:</strong> @eventInfo.Location</p>
+        @if (Session.IsRegisteredFor(eventInfo.Name))
+        {
+            <div class="alert alert-success">You are registered for this event.</div>
+        }
+        else
+        {
+            <button @onclick="GoToRegistration">Register</button>
+        }
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        <p>Event not found.</p>
+        <a href="/">Return to event list</a>
+    </div>
+}
+
+@code {
+    [Parameter]
+    public string EventName { get; set; }
+
+    private EventInfo eventInfo;
+    private List<EventInfo> events = new List<EventInfo>
+    {
+        new EventInfo { Name = "Corporate Gala", Date = DateTime.Now.AddDays(10), Location = "Grand Ballroom" },
+        new EventInfo { Name = "Tech Conference", Date = DateTime.Now.AddDays(20), Location = "Convention Center" },
+        new EventInfo { Name = "Charity Auction", Date = DateTime.Now.AddDays(30), Location = "City Hall" }
+    };
+
+    protected override void OnParametersSet()
+    {
+        if (string.IsNullOrWhiteSpace(EventName))
+        {
+            eventInfo = null;
+            return;
+        }
+        eventInfo = events.FirstOrDefault(e => e.Name == EventName);
+    }
+
+    void GoToRegistration()
+    {
+        Navigation.NavigateTo($"/register/{EventName}");
+    }
+} 
