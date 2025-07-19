@@ -815,7 +815,6 @@ C:\Users\yalam\EventEase\obj\Debug\net9.0\scopedcss\bundle\EventEase.styles.css
 C:\Users\yalam\EventEase\obj\Debug\net9.0\scopedcss\projectbundle\EventEase.bundle.scp.css
 C:\Users\yalam\EventEase\obj\Debug\net9.0\blazor.build.boot-extension.json
 C:\Users\yalam\EventEase\obj\Debug\net9.0\blazor.boot.json
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\nmq3sht62t-cndtd01vrk.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\z1ekdz4m32-bqjiyaj88i.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\qfgw8hoc2o-c2jlpeoesf.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\vi7czabjyp-erw9l3u2r3.gz
@@ -1074,10 +1073,11 @@ C:\Users\yalam\EventEase\obj\Debug\net9.0\refint\EventEase.dll
 C:\Users\yalam\EventEase\obj\Debug\net9.0\EventEase.pdb
 C:\Users\yalam\EventEase\obj\Debug\net9.0\ref\EventEase.dll
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\ox6amlsufo-28q92sd5jj.gz
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.0uw0b29yxx.wasm
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.swp1h42pn8.pdb
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.0uw0b29yxx.wasm.gz
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.swp1h42pn8.pdb.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\gqx5ofl3a7-0uw0b29yxx.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\lw84d9mf51-swp1h42pn8.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\pqrel3z3dc-xzk3932cbj.gz
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.zbq1y1atba.wasm
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.8hm5ixa2x2.pdb
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.zbq1y1atba.wasm.gz
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.8hm5ixa2x2.pdb.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\nmq3sht62t-3k2bz2ka7y.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\gqx5ofl3a7-zbq1y1atba.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\lw84d9mf51-8hm5ixa2x2.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\pqrel3z3dc-ob2dhzvqgg.gz
