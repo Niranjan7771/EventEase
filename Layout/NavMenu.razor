@@ -9,15 +9,19 @@
 
 <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="nav flex-column">
+        <div class="sidebar-logo">
+            <!-- Optionally add an <img src="/logo.png" alt="EventEase Logo" /> here -->
+            <span>EventEase</span>
+        </div>
         <ul class="nav flex-column">
             <li class="nav-item px-3">
                 <NavLink class="nav-link" href="/">Home</NavLink>
             </li>
             <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/event/Corporate Gala">Event Details (Corporate Gala)</NavLink>
+                <NavLink class="nav-link" href="/event/Corporate Gala">Event Details</NavLink>
             </li>
             <li class="nav-item px-3">
-                <NavLink class="nav-link" href="/register/Corporate Gala">Register (Corporate Gala)</NavLink>
+                <NavLink class="nav-link" href="/register/Corporate Gala">Register</NavLink>
             </li>
         </ul>
     </nav>

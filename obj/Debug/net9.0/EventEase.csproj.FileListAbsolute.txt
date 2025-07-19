@@ -199,8 +199,6 @@ C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.m
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.ql7n3zjc18.wasm
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.oejf57wb4x.pdb
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\blazor.webassembly.js.gz
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.bvu82j4ad3.wasm.gz
@@ -403,8 +401,6 @@ C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.js.m
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_CJK.tjcz0u77k5.dat.gz
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_EFIGS.tptq2av103.dat.gz
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\icudt_no_CJK.lfu7j35m59.dat.gz
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.ql7n3zjc18.wasm.gz
-C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.oejf57wb4x.pdb.gz
 C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\blazor.boot.json.gz
 C:\Users\yalam\EventEase\bin\Debug\net9.0\EventEase.staticwebassets.runtime.json
 C:\Users\yalam\EventEase\bin\Debug\net9.0\EventEase.staticwebassets.endpoints.json
@@ -819,7 +815,6 @@ C:\Users\yalam\EventEase\obj\Debug\net9.0\scopedcss\bundle\EventEase.styles.css
 C:\Users\yalam\EventEase\obj\Debug\net9.0\scopedcss\projectbundle\EventEase.bundle.scp.css
 C:\Users\yalam\EventEase\obj\Debug\net9.0\blazor.build.boot-extension.json
 C:\Users\yalam\EventEase\obj\Debug\net9.0\blazor.boot.json
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\ox6amlsufo-8rbvw3on5j.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\nmq3sht62t-cndtd01vrk.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\z1ekdz4m32-bqjiyaj88i.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\qfgw8hoc2o-c2jlpeoesf.gz
@@ -1069,9 +1064,6 @@ C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\2cv14cvn0i-egg93qn8th.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\75trfcm43w-tjcz0u77k5.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\lfiq0gid4h-tptq2av103.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\y62acmnqwm-lfu7j35m59.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\gqx5ofl3a7-ql7n3zjc18.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\lw84d9mf51-oejf57wb4x.gz
-C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\pqrel3z3dc-4hgol3j26w.gz
 C:\Users\yalam\EventEase\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\yalam\EventEase\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\yalam\EventEase\obj\Debug\net9.0\staticwebassets.development.json
@@ -1081,3 +1073,11 @@ C:\Users\yalam\EventEase\obj\Debug\net9.0\EventEase.dll
 C:\Users\yalam\EventEase\obj\Debug\net9.0\refint\EventEase.dll
 C:\Users\yalam\EventEase\obj\Debug\net9.0\EventEase.pdb
 C:\Users\yalam\EventEase\obj\Debug\net9.0\ref\EventEase.dll
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\ox6amlsufo-28q92sd5jj.gz
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.0uw0b29yxx.wasm
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.swp1h42pn8.pdb
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.0uw0b29yxx.wasm.gz
+C:\Users\yalam\EventEase\bin\Debug\net9.0\wwwroot\_framework\EventEase.swp1h42pn8.pdb.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\gqx5ofl3a7-0uw0b29yxx.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\lw84d9mf51-swp1h42pn8.gz
+C:\Users\yalam\EventEase\obj\Debug\net9.0\compressed\pqrel3z3dc-xzk3932cbj.gz

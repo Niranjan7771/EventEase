@@ -1,20 +1,22 @@
 @* EventCard.razor *@
 
 @using EventEase.Models
+@inject NavigationManager Navigation
 
 @if (!IsValidEvent(Event))
 {
-    <div class="event-card invalid">
+    <div class="event-card invalid" role="alert">
         <h3>Invalid Event Data</h3>
         <p>This event could not be displayed due to missing or invalid information.</p>
     </div>
 }
 else
 {
-    <div class="event-card">
+    <div class="event-card" tabindex="0" aria-label="Event card for @Event.Name">
         <h3>@Event.Name</h3>
         <p><strong>Date:</strong> @Event.Date.ToString("MMMM dd, yyyy")</p>
         <p><strong>Location:</strong> @Event.Location</p>
+        <button class="btn btn-primary" @onclick="GoToDetails">Details</button>
     </div>
 }
 
@@ -28,5 +30,11 @@ else
                !string.IsNullOrWhiteSpace(ev.Name) &&
                ev.Date > DateTime.MinValue &&
                !string.IsNullOrWhiteSpace(ev.Location);
+    }
+
+    private void GoToDetails()
+    {
+        if (Event != null && !string.IsNullOrWhiteSpace(Event.Name))
+            Navigation.NavigateTo($"/event/{Event.Name}");
     }
 } 
